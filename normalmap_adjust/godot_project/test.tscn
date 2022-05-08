@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://test_normal.png" type="Texture" id=1]
+[ext_resource path="res://light.png" type="Texture" id=2]
+[ext_resource path="res://test_original.png" type="Texture" id=3]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 158.392, 135.765 )
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 963.503, 1549.98 )
+scale = Vector2( 1.06766, 0.998747 )
+texture = ExtResource( 2 )
+texture_scale = 2.0
+energy = 2.81
+range_height = 256.0
+range_z_min = 0
+range_z_max = 512
+
+[node name="test" type="Sprite" parent="."]
+position = Vector2( 1322.36, 1211.06 )
+texture = ExtResource( 3 )
+normal_map = ExtResource( 1 )
