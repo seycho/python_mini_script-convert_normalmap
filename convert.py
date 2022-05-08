@@ -14,19 +14,19 @@ def main():
     parser.add_argument("--sigma",
                         type=int,
                         default=15,
-                        help="What is the first number?")
+                        help="Gaussian blur sigma value")
     parser.add_argument("--intensity",
                         type=float,
                         default=100.,
-                        help="What is the second number?")
+                        help="power of reflected amount")
     parser.add_argument("--input",
                         type=str,
                         default="test_image/test_original.png",
-                        help="What operation? Can choose add, sub, mul, or div")
+                        help="import file image name")
     parser.add_argument("--output",
                         type=str,
                         default="test_image/test_normalmap.png",
-                        help="What operation? Can choose add, sub, mul, or div")
+                        help="export file image name")
     
     args = parser.parse_args()
     sigma = args.sigma
