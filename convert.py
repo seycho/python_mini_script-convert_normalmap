@@ -4,11 +4,6 @@ import argparse, cv2
 
 
 def main():
-
-    sigma = 15
-    intensity = 100
-    nameInput = "test_original.png"
-    nameOutput = "test_normal.png"
     
     parser = argparse.ArgumentParser()
     parser.add_argument("--sigma",
